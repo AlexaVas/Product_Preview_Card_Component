@@ -1,0 +1,333 @@
+
+/*****************TAG SELECTORS ***********************/
+
+
+
+body { background-color: hsl(30, 38%, 92%);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 800px;
+       
+
+}
+
+
+
+h2 {margin: 0px;
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size:xx-large;
+    line-height: 30px;
+
+}
+
+
+h5 {margin-left: 20px;
+    text-decoration-line: line-through;
+}
+
+
+
+p {font-size: 14px;
+   color: hsl(228, 12%, 48%); 
+   font-family: 'Montserrat', sans-serif;
+   line-height: 25px;
+
+}
+
+
+/***************** CLASS SELECTORS *****************/
+
+
+
+.main {
+
+
+    display:grid;
+
+    background-color: white;
+    height: 450px;
+    min-width: 565px;
+    max-width: 600px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.9fr 1.6fr 1fr 0.5fr 1.5fr;
+    border-radius: 10px;
+    margin: 20px;
+
+}
+
+.right {
+
+    margin-left: 40px;
+
+}
+
+.left {
+
+display: grid;
+grid-row: span 5;
+
+
+}
+
+.left img{
+
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+
+}
+
+.title {
+
+display: flex;
+align-items: flex-end;
+
+}
+
+.title h3 {
+
+    display: flex;
+ font-weight: 500;
+ font-family: 'Montserrat', sans-serif;
+ font-style:normal;
+ font-size:11px;
+ letter-spacing: 7px;
+ color:hsl(228, 12%, 48%);
+    
+    }
+
+
+.name {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 30px;
+    
+
+}
+
+.des {
+
+display: flex;
+margin-right: 40px;
+
+}
+
+.price {
+
+display: flex;
+align-items: end;
+margin-bottom: -10px;
+
+}
+
+.price h3 {
+
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size:xx-large;
+    line-height: 2px;
+    color: hsl(158, 36%, 37%);
+}
+
+.price h5 {
+
+   color: hsl(228, 12%, 48%); 
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 500;
+
+}
+
+.button {
+
+display: flex;
+justify-content: left;
+margin-top: 20px;
+min-width: 100px;
+
+
+}
+
+.button button {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 220px;
+margin-right: 10px;
+height: 45px;
+border-radius: 10px;
+border-style: none;
+background-color: hsl(158, 36%, 37%) ;
+}
+
+.button button:hover {
+
+    background-color: hsl(159, 37%, 20%);
+
+}
+
+
+.button img {
+
+width: 15px;
+height: 15px;
+display: inline-block;
+margin-right: 10px;
+object-fit: cover;
+
+}
+
+.button h3 {
+
+display: inline-block;
+margin: 0px;
+color: white;
+font-family: 'Montserrat', sans-serif;
+font-size:14px;
+
+
+}
+
+
+/************************* MEDIA TAG ***************************/
+
+
+@media screen and (max-width: 600px) {
+
+
+
+ body {     
+    
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 800px;
+    width: 600px;
+    margin: 0px;
+    
+
+}
+
+    .main {
+
+        display: grid;
+        background-color: white;
+        height: 680px;
+        min-width: 380px;
+        max-width: 380px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        border-radius: 10px;
+        margin: 20px;
+        
+        
+    }
+
+
+    h2 {margin: 0px;
+        color: hsl(212, 21%, 14%);
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        font-size:xx-large;
+        line-height: 30px;
+    
+    }
+
+    .title h3 {
+
+        display: flex;
+     font-weight: 500;
+     align-items: center;
+     font-family: 'Montserrat', sans-serif;
+     font-style:normal;
+     font-size:14px;
+     letter-spacing: 7px;
+     color:hsl(228, 12%, 48%);
+    height: 30px;
+        }
+
+    .name {
+
+        display: flex;
+        flex-direction: column;
+        justify-content:left;
+        margin-right: 40px;
+    
+    }
+
+    .name h2 {
+
+        line-height: 31px;
+
+
+    }
+
+        .des {
+    
+            display: flex;
+            margin-right: 40px;
+            justify-content: end;
+            margin-bottom: 0px;
+            height: 130px;
+        }
+    
+
+    .left {
+
+        display: flex;
+        justify-content: center;
+
+        
+        }
+
+
+    .left img{
+
+      width: 380px;
+      height: inherit;
+      object-fit: cover;
+      border-radius: 10px 10px 0px 0px;
+        
+     }
+
+     .price {
+
+        display: flex;
+        align-items: center;
+        margin-bottom: -10px;
+        height: 50px;
+
+     }
+
+     .button {
+
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 20px;
+        min-width: 100px;
+        height: 70px;
+        
+        
+        }
+
+        .button button {
+            display: flex;
+            justify-content: f;
+            align-items: center;
+            width: 300px;
+            margin: 0px 0px 0px 0px;
+            height: 45px;
+            border-radius: 10px;
+            border-style: none;
+            background-color: hsl(158, 36%, 37%);
+        }
+
+    
+
+}
